@@ -6,7 +6,6 @@ export default class Away extends Component {
     constructor() {
       super();
       this.state = {
-        sources: []
       };
     }     
 
