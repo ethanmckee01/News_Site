@@ -1,26 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Article extends React.Component {
-
-constructor(props) {
-    super(props);
-    this.state = {
-         test: null,
-         title: null
-                 };
-                   }
-        
-componentDidMount() {
-    fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=fd75dd4fe27d4d66a9a4e0eedea77f66')      /*API call for the list of articles*/
-    .then(response => response.json())
-    .then(data => this.setState({title: data.articles[0].title}))
-                    }
-
-render() {
-    return (
-        <h3>{this.state.title}</h3>
-        );
-          }
-}
+const Article = props => (
+    <div className="card">
+    <a href={props.whichArticle.url}><img src={props.whichArticle.urlToImage} className="card-img-top" alt={props.whichArticle.title} /></a>
+    <div className="card-body">
+      <h5 className="card-title">{props.whichArticle.title}</h5>
+      <p className="card-text">{props.whichArticle.description}</p>
+      <a href={props.whichArticle.url} class="btn btn-primary">Read More</a>
+    </div>
+    <div className="card-footer">
+      <small className="text-muted">Source: {props.whichArticle.source.name}</small>
+    </div>
+  </div>
+)
 
 export default Article
