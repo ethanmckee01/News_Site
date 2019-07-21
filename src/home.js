@@ -13,14 +13,14 @@ export default class Home extends Component {
 componentDidMount() {
   fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=fd75dd4fe27d4d66a9a4e0eedea77f66&pageSize=5')      /*API call for the list of articles*/
     .then(response => response.json())
-    .then(data => this.setState({articles: data.articles}))
+    .then(data => this.setState({articles: data.articles}))   /*Gets saved to the state variable 'articles'*/
 }
 
 
   render() {
     return(
       <div>
-        <ArticleContainer data={this.state.articles} />
+        <ArticleContainer data={this.state.articles} />   {/*prop gets passed so the ArticleContainer can pass info to Article component */}
       </div>
     )
 };
