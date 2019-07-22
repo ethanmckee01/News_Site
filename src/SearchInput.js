@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ArticleContainer from './ArticleContainer'
 
-export default class SearchBox extends Component {
+export default class SearchInput extends Component {
 
     constructor() {
       super();
@@ -12,7 +12,7 @@ export default class SearchBox extends Component {
     }     
 
 handleQuery = (e) => {
-    e.preventDefault();
+    e.preventDefault();  //Stops page from reloading upon submit
     let searchQuery = this.state.search;
     fetch('https://newsapi.org/v2/everything?q=' + searchQuery + '&apiKey=fd75dd4fe27d4d66a9a4e0eedea77f66&pageSize=5&language=en')      /*API call for the list of articles*/
     .then(response => response.json())

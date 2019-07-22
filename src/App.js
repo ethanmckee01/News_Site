@@ -3,11 +3,10 @@ import {Route, HashRouter} from 'react-router-dom'
 
 import './App.css';
 
-import Home from './home'
-import Away from './Away'
+import Home from './Home'
+import SearchPage from './SearchPage'
 import Nav from './Nav'
-import Third from './Third'
-import ArticleContainer from './ArticleContainer'
+import WeatherPage from './WeatherPage'
 
 export default class App extends Component {
 
@@ -31,8 +30,8 @@ componentDidMount() {
       <div className="test">
         <Nav />
         <Route exact path="/" component={Home}/>
-        <Route path="/away" component={Away}/>
-        <Route path="/third" component={Third}/>
+        <Route path="/Search" component={SearchPage}/>
+        <Route path="/Weather" component={WeatherPage}/>
       </div>
     </HashRouter>
     )

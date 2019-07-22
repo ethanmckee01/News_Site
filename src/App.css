@@ -42,3 +42,21 @@
     transform: rotate(360deg);
   }
 }
+
+.date, .temp
+{
+  text-align: center;
+  font-weight: bold;
+}
+
+.date
+{
+  padding-top: 15px;
+}
+
+.weatherDesc
+{
+  height:50px; 
+  max-height:100px;
+  overflow: hidden;
+}

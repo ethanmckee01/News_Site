@@ -9,7 +9,7 @@ if (!props.data || props.data.length === 0) {       //if statement makes sure pr
   let articles;
   articles = results.map((article,i) => <Article whichArticle={article} key={i} />) //Passes the necessary props for the Article component to build an Article card
   return (
-    <div className="card-deck">
+    <div className="card-deck">  {/*Wrapped in bootstrap's card-deck class, which automatically formats the card components */}
         {articles}
     </div>
     )

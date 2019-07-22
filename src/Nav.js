@@ -16,10 +16,10 @@ const Nav = () => {
             <span className="sr-only">(current)</span>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link bg" to="/away">Search</NavLink>
+              <NavLink className="nav-link bg" to="/Search">Search</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link bg" to="/Third">Weather</NavLink>
+              <NavLink className="nav-link bg" to="/Weather">Weather</NavLink>
             </li>
           </ul>
         </div>

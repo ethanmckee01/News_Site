@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ArticleContainer from './ArticleContainer'
 
-export default class Home extends Component {
-
+export default class Home extends Component {    //This page is a stateful component because I wanted a fetch to happen upon component mount, so there would always be 
+                                                 //some articles displayed.
     constructor() {
       super();
       this.state = {
@@ -11,7 +11,7 @@ export default class Home extends Component {
     }     
 
 componentDidMount() {
-  fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=fd75dd4fe27d4d66a9a4e0eedea77f66&pageSize=5')      /*API call for the list of articles*/
+  fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=fd75dd4fe27d4d66a9a4e0eedea77f66&pageSize=5')      //API call for the list of articles
     .then(response => response.json())
     .then(data => this.setState({articles: data.articles}))   /*Gets saved to the state variable 'articles'*/
 }
