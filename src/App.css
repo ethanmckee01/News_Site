@@ -60,3 +60,38 @@
   max-height:100px;
   overflow: hidden;
 }
+
+.card-img-top
+{
+  padding: 10px 5px 0px 5px;
+  max-height: 250px;
+  height:250px;
+  overflow: hidden;
+}
+
+.card-deck
+{
+  padding: 25px 15px 0px 15px;
+
+}
+
+.readmore
+{
+  font-weight: bold;
+  font-size: .93em;
+}
+
+.readmore:hover
+{
+  text-shadow: 1px 1px rgba(39, 39, 39, 0.473);
+}
+
+.card-title
+{
+  font-size: 1.3em;
+}
+
+.input-field
+{
+  padding-top: 10px;
+}

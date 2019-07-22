@@ -26,8 +26,9 @@ handleZipChange = (e) => {
   render() {
     return(
       <div>
+        <br />
         <form onSubmit={this.handleWeatherQuery}>
-          <input className="form-control form-control-lg" type="text" placeholder="Enter A Zip Code..." onChange={this.handleZipChange} /><br />
+          <input className="form-control form-control-lg input-field" type="text" placeholder="Enter A Zip Code..." onChange={this.handleZipChange} /><br />
           <button className="btn btn-primary" type="submit">Get Weather</button>
         </form><br />
         <div>

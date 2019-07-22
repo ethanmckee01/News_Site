@@ -6,10 +6,10 @@ const Article = props => (
     <div className="card-body">
       <h5 className="card-title">{props.whichArticle.title}</h5>
       <p className="card-text">{props.whichArticle.description}</p>
-      <a href={props.whichArticle.url} class="btn btn-primary">Read More</a>
     </div>
     <div className="card-footer">
-      <small className="text-muted">Source: {props.whichArticle.source.name}</small>
+      <small className="text-muted footer-text">Source: {props.whichArticle.source.name}</small><br />
+      <a href={props.whichArticle.url} class="readmore">Read More >></a>
     </div>
   </div>
 )

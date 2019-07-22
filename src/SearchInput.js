@@ -26,8 +26,9 @@ handleChange = (e) => {
   render() {
     return(
       <div>
+        <br />
         <form onSubmit={this.handleQuery}>
-          <input class="form-control form-control-lg" type="text" placeholder="Search..." onChange={this.handleChange} /><br />
+          <input class="form-control form-control-lg input-field" type="text" placeholder="Search..." onChange={this.handleChange} /><br />
           <button className="btn btn-primary" type="submit">Search</button>
         </form><br />
         <div>
