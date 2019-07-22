@@ -29,7 +29,7 @@ handleZipChange = (e) => {
         <br />
         <form onSubmit={this.handleWeatherQuery}>
           <input className="form-control form-control-lg input-field" type="text" placeholder="Enter A Zip Code..." onChange={this.handleZipChange} /><br />
-          <button className="btn btn-primary" type="submit">Get Weather</button>
+          <button className="btn btn-dark" type="submit">Get Weather</button>
         </form><br />
         <div>
         <WeatherContainer data={this.state.weatherArray} />

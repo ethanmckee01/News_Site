@@ -27,7 +27,7 @@ componentDidMount() {
   render() {
     return(
     <HashRouter>
-      <div className="test">
+      <div className='wrapper'>
         <Nav />
         <Route exact path="/" component={Home}/>
         <Route path="/Search" component={SearchPage}/>

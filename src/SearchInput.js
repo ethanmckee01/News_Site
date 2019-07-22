@@ -28,8 +28,8 @@ handleChange = (e) => {
       <div>
         <br />
         <form onSubmit={this.handleQuery}>
-          <input class="form-control form-control-lg input-field" type="text" placeholder="Search..." onChange={this.handleChange} /><br />
-          <button className="btn btn-primary" type="submit">Search</button>
+          <input class="form-control form-control-lg input-field" type="text" onChange={this.handleChange} /><br />
+          <button className="btn btn-dark" type="submit">Search</button>
         </form><br />
         <div>
         <ArticleContainer data={this.state.searchedArticles} />

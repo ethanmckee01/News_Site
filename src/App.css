@@ -79,11 +79,14 @@
 {
   font-weight: bold;
   font-size: .93em;
+  color: rgba(39, 39, 39);
 }
 
 .readmore:hover
 {
+  color: rgba(39, 39, 39);
   text-shadow: 1px 1px rgba(39, 39, 39, 0.473);
+  text-decoration: none;
 }
 
 .card-title
@@ -94,4 +97,12 @@
 .input-field
 {
   padding-top: 10px;
+}
+
+.btn-dark
+{
+  font-weight: bold;
+  padding-left: 10px;
+  position: absolute;
+  left: 10px;
 }
