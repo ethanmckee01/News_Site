@@ -1,5 +1,5 @@
 import React from 'react';
-import WeatherInput from './WeatherInput';
+import WeatherInput from './WeatherInput.js';
 
 const WeatherPage = props => (
     <div>

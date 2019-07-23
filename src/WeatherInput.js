@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WeatherContainer from './WeatherContainer'
+import WeatherContainer from './WeatherContainer.js'
 
 export default class WeatherInput extends Component {
 

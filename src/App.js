@@ -3,10 +3,10 @@ import {Route, HashRouter} from 'react-router-dom'
 
 import './App.css';
 
-import Home from './Home'
-import SearchPage from './SearchPage'
-import Nav from './Nav'
-import WeatherPage from './WeatherPage'
+import Home from './Home.js'
+import SearchPage from './SearchPage.js'
+import Nav from './Nav.js'
+import WeatherPage from './WeatherPage.js'
 
 export default class App extends Component {
 

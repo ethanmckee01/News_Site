@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ArticleContainer from './ArticleContainer'
+import ArticleContainer from './ArticleContainer.js'
 
 export default class SearchInput extends Component {
 
