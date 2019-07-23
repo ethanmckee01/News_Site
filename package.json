@@ -2,7 +2,6 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ethanmckee01.github.io/news_site",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "lodash": "^4.17.14",
@@ -13,8 +12,6 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "predeployed":"npm run build",
-    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
