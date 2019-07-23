@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ArticleContainer from './ArticleContainer'
 
-export default class Home extends Component {    //This page is a stateful component because I wanted a fetch to happen upon component mount, so there would always be 
+export default class home extends Component {    //This page is a stateful component because I wanted a fetch to happen upon component mount, so there would always be 
                                                  //some articles displayed.
     constructor() {
       super();

@@ -29,7 +29,7 @@ componentDidMount() {
     <HashRouter>
       <div className='wrapper'>
         <Nav />
-        <Route exact path="/" component={Home}/>
+        <Route exact path="/" component={home}/>
         <Route path="/Search" component={SearchPage}/>
         <Route path="/Weather" component={WeatherPage}/>
       </div>
