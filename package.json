@@ -1,6 +1,9 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.6.0"
+  },
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
