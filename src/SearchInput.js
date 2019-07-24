@@ -7,7 +7,7 @@ export default class SearchInput extends Component {
       super();
       this.state = {
         searchedArticles: [],         /*State variable array for the initial fetch return*/
-        search: ''                    /*State variable for the search string*/
+        search: '',                  /*State variable for the search string*/
       };
     }     
 
@@ -23,12 +23,27 @@ handleChange = (e) => {
     this.setState({search: e.target.value})   /*function for setting the state each time the text inside the input changes*/
 }
 
+validateForm = (e) => {
+    var lastChar = this.state.search.slice(-1);             //Get the last character of the input
+    if (!(/[a-zA-Z0-9,]+/g.test(lastChar))) {               //Check if it's a letter or a number
+      var NewSearch = this.state.search.slice(0, this.state.search.length-1);         //If it's not, create a new variable that slices off the last character
+      this.setState({search: NewSearch});                                             //Then set the state to remove the invalid character
+    }
+}
+
   render() {
     return(
       <div>
         <br />
         <form onSubmit={this.handleQuery}>
-          <input class="form-control form-control-lg input-field" type="text" onChange={this.handleChange} /><br />
+          <input 
+          class="form-control form-control-lg input-field" 
+          type="text" 
+          placeholder="Letters and numbers only, please..."
+          onChange={this.handleChange}
+          value={this.state.search} 
+          onKeyUp={this.validateForm}/>
+          <br />
           <button className="btn btn-dark" type="submit">Search</button>
         </form><br />
         <div>
