@@ -25,7 +25,7 @@ handleChange = (e) => {
 
 validateForm = (e) => {
     var lastChar = this.state.search.slice(-1);             //Get the last character of the input
-    if (!(/[a-zA-Z0-9,]+/g.test(lastChar))) {               //Check if it's a letter or a number
+    if (!(/[a-zA-Z0-9\s,]+/g.test(lastChar))) {               //Check if it's a letter or a number
       var NewSearch = this.state.search.slice(0, this.state.search.length-1);         //If it's not, create a new variable that slices off the last character
       this.setState({search: NewSearch});                                             //Then set the state to remove the invalid character
     }
