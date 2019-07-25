@@ -8,15 +8,17 @@ export default class WeatherInput extends Component {
       this.state = {
         weatherArray: [],         /*State variable array for the initial fetch return*/
         zip: '',
+        apiKey: 'ae16450f03734d7fbb5cac0e7840888d'
       };
     }     
 
 handleWeatherQuery = (e) => {
     e.preventDefault();     //Stops page from reloading upon submit
     let zipQuery = this.state.zip;
-    fetch('https://api.weatherbit.io/v2.0/forecast/daily?postal_code=' + zipQuery + '&units=I&days=7&key=ae16450f03734d7fbb5cac0e7840888d')      /*API call for the list of articles*/
+    fetch('https://api.weatherbit.io/v2.0/forecast/daily?postal_code=' + zipQuery + '&units=I&days=7&key=' + this.state.apiKey)      /*API call for the list of articles*/
     .then(response => response.json())
     .then(data => this.setState({weatherArray: data.data}))
+    .catch(error => console.error('Error:' + error))
 }
 
 handleZipChange = (e) => {
