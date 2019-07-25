@@ -35,16 +35,15 @@ validateForm = (e) => {
     return(
       <div>
         <br />
-        <form onSubmit={this.handleQuery}>
+        <form onSubmit={this.handleQuery} class="searchform">
           <input 
-          class="form-control form-control-lg input-field" 
+          class="searchbox"
           type="text" 
           placeholder="Letters and numbers only, please..."
           onChange={this.handleChange}
           value={this.state.search} 
           onKeyUp={this.validateForm}/>
-          <br />
-          <button className="btn btn-dark" type="submit">Search</button>
+          <button className="btn btn-dark searchbutton" type="submit">Search</button>
         </form><br />
         <div>
         <ArticleContainer data={this.state.searchedArticles} />
