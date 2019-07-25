@@ -33,7 +33,7 @@ handleZipChange = (e) => {
           type="number" 
           placeholder="Enter A Zip Code..." 
           onChange={this.handleZipChange} />
-          <button className="btn btn-dark searchbutton" type="submit">Get Weather</button>
+          <button className="btn btn-dark searchbutton weathersearchbutton" type="submit">Get Weather</button>
         </form><br />
         <div>
         <WeatherContainer data={this.state.weatherArray} />
