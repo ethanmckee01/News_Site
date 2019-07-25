@@ -79,13 +79,13 @@
 {
   font-weight: bold;
   font-size: .93em;
-  color: rgba(39, 39, 39);
+  color: rgb(107, 107, 107);
 }
 
 .readmore:hover
 {
-  color: rgba(39, 39, 39);
-  text-shadow: 1px 1px rgba(39, 39, 39, 0.473);
+  color: rgb(0, 0, 0);
+  transition: color .5s;
   text-decoration: none;
 }
 
