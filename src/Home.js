@@ -15,7 +15,7 @@ componentDidMount() {
   fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=' + this.state.apiKey + '&pageSize=5')      //API call for the list of articles
     .then(response => response.json())
     .then(data => this.setState({articles: data.articles}))   /*Gets saved to the state variable 'articles'*/
-    .catch(error => console.error('Error:' + error))
+    .catch(error => console.error(error))
 }
 
 

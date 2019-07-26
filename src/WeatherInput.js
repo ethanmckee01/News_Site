@@ -18,7 +18,7 @@ handleWeatherQuery = (e) => {
     fetch('https://api.weatherbit.io/v2.0/forecast/daily?postal_code=' + zipQuery + '&units=I&days=7&key=' + this.state.apiKey)      /*API call for the list of articles*/
     .then(response => response.json())
     .then(data => this.setState({weatherArray: data.data}))
-    .catch(error => console.error('Error:' + error))
+    .catch(error => console.error(error))
 }
 
 handleZipChange = (e) => {
